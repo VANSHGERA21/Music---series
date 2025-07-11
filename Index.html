@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Inspiration Series</title>
+  <style>
+    /* your original CSS remains unchanged except for the additions below */
+
+    /* Inside .person - now shows a face */
+    .person-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #fceabb, #f8b500);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .eye {
+      width: 15px;
+      height: 15px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 45px;
+    }
+
+    .eye.left {
+      left: 35px;
+    }
+
+    .eye.right {
+      right: 35px;
+    }
+
+    .mouth {
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      width: 30px;
+      height: 10px;
+      background: #000;
+      border-radius: 0 0 50px 50px;
+      transform: translateX(-50%);
+    }
+
+    /* Update button text size for readability */
+    .series-tag {
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="musical-notes">♪ ♫ ♪</div>
+
+    <div class="person-container">
+      <div class="person pulse">
+        <div class="headphones"></div>
+        <div class="person-face">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="mouth"></div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="title">Music & Motivation</h1>
+
+    <p class="subtitle">
+      Join me on a journey where every song tells a story,<br />
+      and every lyric sparks inspiration for your <span class="linkedin-accent">professional growth</span>
+    </p>
+
+    <button class="series-tag" onclick="handleSeriesClick()">Connect with Me</button>
+
+    <div class="wave"></div>
+  </div>
+
+  <script>
+    function handleSeriesClick() {
+      // Redirect to LinkedIn profile
+      window.open('https://www.linkedin.com/in/vansh-gera-0a97a5302', '_blank');
+    }
+  </script>
+</body>
+</html>
